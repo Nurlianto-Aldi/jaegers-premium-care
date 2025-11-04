@@ -5,23 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Jaeger Premium Care - Maintenance Services of Jaegers">
     <link rel="icon" type="image/x-icon" href="assets/jaeger-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Geo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/output.css">
     <title>Jaeger Premium Care</title>
 </head>
-<body>
+<body
+    class="flex flex-col h-full w-screen relative"
+>
 
-    <header>
+    <header
+        class="font-orbitron sticky top-0 z-100 bg-white"
+    >
         <div
-            class="flex "
+            class="flex flex-row flex-1 items-center justify-between px-4 md:px-10 lg:px-20 shadow-md"
         >
-            <div>
-                <h1>logo</h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Contact</a></li>
+
+            <!-- image -->
+            <a
+                href="index.html"
+                class="w-[75px] aspect-square"
+            >
+                <img 
+                    src="/assets/jaeger-logo.png" 
+                    alt="jaeger-premium-care-logo"
+                    class="w-full h-full"
+                >
+            </a>
+
+            <!-- navlinks -->
+            <div
+                class="md:flex grow items-center justify-end hidden"
+            >
+                <ul
+                    class="flex flex-row text-md gap-20"
+                >
+                    <li class="hover:underline hover:bold transition-all"><a href="/index.html">Home</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="#service-section">Service</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="#feature-section">Feature</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="#review-section">Review</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="/contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -46,27 +68,327 @@
     </header>
 
 
-    <main>
+    <main
+        class="flex flex-col h-full"
+    >
+
+        <div
+            class=""
+        >
+
+        <!-- hero -->
+        <div
+            class="flex flex-col h-dvh items-start justify-center gap-8 px-4 md:px-10 lg:px-50 relative bg-[url(/assets/wp1822923-pacific-rim-wallpapers.jpg)] bg-cover text-white"
+        >
+            <div class="absolute inset-0 bg-linear-to-t from-black/90 to-transparent pointer-events-none"></div>
+            <h1
+                class="font-orbitron text-6xl font-bold relative z-10"
+            >
+                Jaeger Premium Care
+            </h1>
+            <p
+                class="font-geo text-4xl max-w-3xl relative z-10"
+            >
+                You're already worn out battling the Kaiju, don't even bother with the big steel armor.
+            </p>
+            <a  
+                href="#"
+                class="py-4 px-12 bg-blue-600 hover:bg-blue-400 cursor-pointer text-white rounded font-orbitron relative z-10"       
+            >
+                Contact Us
+            </a>
+        </div>
+
+        <!-- service -->
+        <div
+            id="service-section"
+            class="flex flex-col items-center h-dvh jusitfy-center w-ful py-10 gap-10 md:gap-10 lg:gap-10 scroll-mt-[75px]"
+        >
+
+            <!-- text -->
+            <h1
+                class="text-4xl font-bold italic font-orbitron text-center"
+            >
+                Service
+            </h1>
+            
+            <!-- service card -->
+            <div
+                class="flex flex-col md:flex-row lg:flex-row w-full items-center justify-between gap-5 px-4 md:px-10 lg:px-20"
+            >
+
+                <!-- card 1 -->
+                <div
+                    class="flex flex-col w-[350px] outline-1 outline-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                >
+                    <div
+                        class="h-[350px] w-full"
+                    >
+                        <img 
+                            src="/assets/Pacific Rim Kaiju.jpeg" 
+                            alt="tune-up-service"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-between text-center gap-4 p-6 font-geo"
+                    >
+                        <h3 class="text-xl font-bold font-orbitron">🔥Tune Up!🔥</h3>
+                        <p class="text-gray-600">Let us make that rocket shoot to its maximum potentials!</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 font-semibold mt-auto">View Services →</a>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="flex flex-col w-[350px] outline-1 outline-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                >
+
+                    <!-- image -->
+                    <div
+                        class="h-[350px] w-full"
+                    >
+                        <img 
+                            src="/assets/pacific-rim-movie.avif" 
+                            alt="bling-bling-service"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <!-- desc -->
+                    <div
+                        class="flex flex-col items-center  justify-between text-center gap-4 p-6 font-geo"
+                    >
+                        <h3 class="text-xl font-bold font-orbitron">✨Glow Up✨</h3>
+                        <p class="text-gray-600">Gotta give a punch with a style, right?</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 font-semibold mt-auto">View Services →</a>
+                    </div>
+
+                </div>
+
+                <!-- card 3 -->
+                <div
+                    class="flex flex-col w-[350px] outline-1 outline-gray-200 rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                >
+
+                    <!-- image -->
+                    <div
+                        class="h-[350px] w-full"
+                    >
+                        <img 
+                            src="/assets/racificrim_trailer-2000-d648fbdc683e48148d031388fedbf673.jpg" 
+                            alt="bling-bling-service"
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+
+                    <!-- desc -->
+                    <div
+                        class="flex flex-col items-center  justify-between text-center gap-4 p-6 font-geo"
+                    >
+                        <h3 class="text-xl font-bold font-orbitron">✨Maintenance✨</h3>
+                        <p class="text-gray-600">Regular checkup so you always ready even when they not come yet.</p>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 font-semibold mt-auto">View Services →</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- feature -->
+        <div
+            id="feature-section"
+            class="flex flex-col text-white px-4 w-full md:px-5 lg:px-50 gap-10 lg:gap-30 scroll-mt-20"
+        >
+            <!-- text -->
+            <div
+                class="text-4xl font-bold italic font-orbitron text-center text-black"
+            >
+                <h2>Feature</h2>
+            </div>
+            
+            <!-- feature card 1 -->
+            <div
+                class="flex flex-col md:flex lg:flex md:relative lg:relative"
+            >
+                <!-- image -->
+                <div
+                    class="flex w-full h-60 lg:w-[720px] lg:h-[480px] rounded-md bg-cover bg-[url(/assets/godzilla-minus-one.jpeg)] "
+                >
+                </div>
+                
+                <!-- text -->
+                <div
+                    class="flex flex-col items-start lg:absolute lg:top-70 lg:right-0 w-full lg:max-w-[488px] rounded-md p-8 gap-4 shadow-md bg-[url(/assets/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg)]"
+                >
+                    <h3 class="text-4xl font-bold font-orbitron">Anti-Godzilla</h3>
+                    <span class="font-geo text-xl">
+                        We'll make sure your Jaegers will be Godzilla-proof! Even the deathly "akhhhhhh" won't even scratch your Jaegers
+                    </span>
+                    <a href="#" class="inline-block py-2 px-8 bg-white rounded-md text-black self-start">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <!-- feature card 2 -->
+            <div
+                class="flex flex-col lg:justify-end items-end md:flex lg:flex md:relative lg:relative"
+            >
+                <!-- image -->
+                <div
+                    class="flex w-full h-60 lg:w-[720px] lg:h-[480px] rounded-md bg-cover bg-[url(/assets/everykaiju-blogroll-1521750861920_160w.jpg)] "
+                >
+                </div>
+                
+                <!-- text -->
+                <div
+                    class="flex flex-col items-start lg:absolute lg:top-70 lg:left-0 w-full lg:max-w-[488px] rounded-md p-8 gap-4 shadow-md bg-[url(/assets/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg)]"
+                >
+                    <h3 class="text-4xl font-bold font-orbitron">Anti-Kaiju</h3>
+                    <span class="font-geo text-xl">
+                        If Godzilla nothing to you, then Kaiju is nothing to worry about.
+                    </span>
+                    <a href="#" class="inline-block py-2 px-8 bg-white rounded-md text-black self-start">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <!-- feature card 3 -->
+            <div
+                class="flex flex-col md:flex lg:flex md:relative lg:relative"
+            >
+                <!-- image -->
+                <div
+                    class="flex w-full h-60 lg:w-[720px] lg:h-[480px] rounded-md bg-cover bg-[url(/assets/racificrim_trailer-2000-d648fbdc683e48148d031388fedbf673.jpg)] "
+                >
+                </div>
+                
+                <!-- text -->
+                <div
+                    class="flex flex-col items-start lg:absolute lg:top-70 lg:right-0 w-full lg:max-w-[488px] rounded-md p-8 gap-4 shadow-md bg-[url(/assets/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg)]"
+                >
+                    <h3 class="text-4xl font-bold font-orbitron">Batling with Bling Bling</h3>
+                    <span class="font-geo text-xl">
+                        "You can't hurt me, this armor is Gucci" as  Hakusho said. Yes, we collaborate with Gucci.
+                    </span>
+                    <a href="#" class="inline-block py-2 px-8 bg-white rounded-md text-black self-start">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- review -->
+        <div
+            id="review-section"
+            class="flex flex-col h-1/2dvh items-center justify-center text-center my-100 px-20 gap-5 scroll-mt-[400px]"
+        >
+                <blockquote class="flex items-center justify-center text-4xl italic font-geo">
+                    "The only team i trust to keep my Jaeger ready for battle. Quick, efficient, and no question asked."
+                </blockquote>
+                <cite class="flex items-center justify-center text-xl font-extrabold font-orbitron">- Master Chief</cite>
+        </div>
+
+        <!-- offer -->
+        <div
+            id="offering-section"
+            class="flex flex-col md:flex-col lg:flex-row flex-start md:flex-start lg:items-center justify-center gap-5 text-white px-20 py-8 bg-[url(/assets/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg)]"
+        >
+            <div class="flex flex-col md:1/2 lg:w-2/3 gap-5">
+                <h2 class="text-4xl font-orbitron font-bold">Get Special Offer Now!</h2>
+                <span class="text-xl font-geo">As a tribute to the Jaegers Pilot, we offer a 10% discount for every Kaiju defeated. Another Extra 10% for every Godzilla attack thwarted.</span>
+            </div>
+            <div class="flex items-start justify-center md:1/2 lg:w-1/3">
+                <a href="" class="px-8 py-4 bg-white text-black font-orbitron font-bold rounded-md">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div
+                class="flex flex-col md:flex-col lg:flex-row md:items-start lg:items-center justify-between w-full px-20 py-10 bg-black text-white gap-5"
+            >
+
+                <!-- services -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold font-orbitron text-xl underline">
+                        SERVICES
+                    </h3>
+                    <ul class="flex flex-col gap-2 font-geo">
+                        <li><a href="">Maintenance</a></li>
+                        <li><a href="">Tune Up</a></li>
+                        <li><a href="">Glow Up</a></li>
+                    </ul>
+                </div>
+
+                <!-- contact -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold font-orbitron text-xl underline">
+                        CONTACT
+                    </h3>
+                    <ul class="flex flex-col gap-2 font-geo">
+                        <li><a href="">totallyfake@mail.com</a></li>
+                        <li><a href=""></a>+62 345 678</li>
+                        <li><a href="">jaegerspremiumcare.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- working hour -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold font-orbitron text-xl underline">
+                        WORKING HOUR
+                    </h3>
+                    <ul class="flex flex-col gap-2 font-geo">
+                        <li><a href=""></a>Monday - Friday</li>
+                        <li><a href=""></a>9AM - 5PM</li>
+                        <li><a href=""></a>Open on Holiday</li>
+                    </ul>
+                </div>
+
+                <!-- social -->
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-bold font-orbitron text-xl underline">SOCIAL</h3>
+                    <ul>
+                        <li><a href="">Github</a></li>
+                        <li><a href=""> class="flex flex-col gap-2 font-geo"Linkedin</a></li>
+                        <li><a href="">Web</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+        </div>
         <!-- Banner Section -->
-        <section id="banner">
+        <!-- <section id="banner">
             <div>
                 <h1 class="heading-1">Jaeger Premium Care</h1>
                 <p class="paragraph">You're already worn out battling the Kaiju, don't even bother with the big steel armor.</p>
                 <a href="" type="button" class="contact-us">contact us</a>
             </div>
-        </section>
+        </section> -->
         <!-- End of Banner Section -->
 
         <!-- Description Section -->
-        <section id="description">
+        <!-- <section id="description">
             <h2 class="heading-2">
                 Sip a lemonade, grab a snack. Let the professionals handle your Jaegers.
             </h2>
-        </section>
+        </section> -->
         <!-- End of Description Section -->
 
         <!-- Services Card Section -->
-        <section id="services-card">
+        <!-- <section id="services-card">
             <div>
                 <div class="cards">
                     <div>
@@ -94,11 +416,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End of Services Card Section -->
 
         <!-- Services Section -->
-        <section id="services">
+        <!-- <section id="services">
             <div>
                 <div class="serv-desc">
                     <div>
@@ -133,22 +455,22 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End of Services Section -->
 
         <!-- Client Review Section -->
-        <section id="client-review">
+        <!-- <section id="client-review">
             <div>
                 <blockquote class="heading-2">
                     "The only team i trust to keep my Jaeger ready for battle. Quick, efficient, and no question asked."
                 </blockquote>
                 <cite class="paragraph">- Master Chief</cite>
             </div>
-        </section>
+        </section> -->
         <!-- End of Client Review Section -->
 
         <!-- Offering Section -->
-        <section id="offering">
+        <!-- <section id="offering">
             <div>
                 <div>
                     <h1 class="heading-2">Get Special Offer Now!</h1>
@@ -158,12 +480,12 @@
                     <a href="" class="contact-us">Contact us</a>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End of Offering Section -->
     </main>
 
     <!-- Footer Section -->
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div>
             <div>
                 <p>Services</p>
@@ -209,7 +531,7 @@
                 <p>&#169; 2024 Nurlianto Aldi</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- End of Footer Section -->
 </body>
 </html>

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Google Fonts are loaded via <link> in the HTML for predictable render timing.
+   Keeping font-family variables here for use in the CSS build. */
+@theme {
+    --font-orbitron: "Orbitron", sans-serif;
+    --font-geo: "Geo", sans-serif;
+}
 
 
 
