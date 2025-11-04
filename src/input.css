@@ -1,4 +1,11 @@
-* {
+@import "tailwindcss";
+
+
+
+
+
+
+/* * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
@@ -7,10 +14,10 @@ body {
     padding: 0;
     border: 0;
     margin: 0;
-}
+} */
 
 /* Template Section */
-.contact-us {
+/* .contact-us {
     color: black;
     background-color: white;
     font-size: 1.1rem;
@@ -47,11 +54,11 @@ body {
     font-weight: 100;
     padding: 0;
     margin: 0.5rem 0;
-}
+} */
 /* End of Template Section */
 
 /* Navigation Section */
-header {
+/* header {
     position: fixed;
     z-index: 2;
     background-color: white;
@@ -119,11 +126,11 @@ header {
 .nav-bar ul li a:hover::after {
     width: 100%;
     left: 0;
-}
+} */
 /* End of Navigation Section */
 
 /* Banner Section */
-#banner {
+/* #banner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,11 +152,11 @@ header {
     height: 800px;
     padding-right: 20rem;
     color: white;
-}
+} */
 /* End of Banner Section */
 
 /* Description Section */
-#description {
+/* #description {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,11 +168,11 @@ header {
 
 #description h2 {
     max-width: 1200px;
-}
+} */
 /* End of Description Section */
 
 /* Services Card Section */
-#services-card {
+/* #services-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,11 +230,11 @@ header {
 
 .cards div:nth-child(2) a:nth-child(3) {
     text-transform: uppercase;
-}
+} */
 /* End of Services Card Section */
 
 /* Services Section */
-#services {
+/* #services {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,11 +289,11 @@ header {
 
 .serv-desc:nth-child(2) div:nth-child(2) {
     left: 10rem;
-}
+} */
 /* End of Services Section */
 
 /* Client Review Section */
-#client-review {
+/* #client-review {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,11 +315,11 @@ header {
 #client-review cite {
     font-style: normal;
     font-weight: bolder;
-}
+} */
 /* End of Client Review Section */
 
 /* Offering Section */
-#offering {
+/* #offering {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,11 +349,11 @@ header {
     align-items: center;
     justify-content: center;
     width: 70%;
-}
+} */
 /* End of Offering Section */
 
 /* footer section */
-#footer {
+/* #footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -405,10 +412,10 @@ footer > div > div:nth-child(4) ul li a img{
     width: 1rem;
     margin-bottom: 1rem;
     
-}
+} */
 
 /* Page Three Section (CONTACT US) */
-#contact-us-form {
+/* #contact-us-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -470,41 +477,41 @@ fieldset div {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-}
+} */
 
 /* End of Page Three Section (CONTACT US) */
 
 
 /* Media Query for Tablet */
-@media (min-width:768px) and (max-width: 991px) {
+/* @media (min-width:768px) and (max-width: 991px) { */
     /* Navigation Section */
-    header {
+    /* header {
         padding: 0 7rem;
     }
 
     .nav-bar ul {
         gap: 4rem;
-    }
+    } */
     /* End of Navigation Section */
 
     /* Banner Section */
-    #banner {
+    /* #banner {
         padding: 0 7rem;
     }
 
     #banner div {
         padding-right: 10rem;
-    }
+    } */
     /* End of Banner Section */
 
     /* Description Section */
-    #description {
+    /* #description {
         padding: 0 4rem;
-    }
+    } */
     /* End of Banner Section */
 
     /* Services Section */
-    #services-card {
+    /* #services-card {
         padding: 0 7rem;
     }
 
@@ -522,11 +529,11 @@ fieldset div {
 
     .cards div:nth-child(2) a {
         margin: 0.3rem;
-    }
+    } */
     /* End of Service Card Section */
 
     /* Services Section */
-    #services {
+    /* #services {
         padding: 0 7rem;
     }
     
@@ -541,17 +548,17 @@ fieldset div {
 
     .serv-desc:nth-child(2) div:nth-child(2) {
         left: 0rem;
-    }
+    } */
     /* End of Services Section */
 
     /* Client Review Section */
-    #client-review {
+    /* #client-review {
         padding: 0 7rem;
-    }
+    } */
     /* End of Client Review Section */
 
     /* Offering Section */
-    #offering {
+    /* #offering {
         padding: 0 7rem;
     }
 
@@ -561,19 +568,19 @@ fieldset div {
 
     #offering div div:nth-child(2) {
         width: 40%;
-    }
+    } */
     /* End of Offering Section */
 
     /* Footer Section */
-    #footer {
+    /* #footer {
         padding: 0 7rem;
     }
-}
+} */
 
 /* End of Media Query for Tablet */
 
 /* Media Query for Mobile */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     header {
         height: auto;
         padding: 0 1rem;
@@ -594,9 +601,9 @@ fieldset div {
         flex-direction: column;
         gap: 1rem;
         padding: 0 1rem;
-    }
+    } */
     /* End of Navigation Section */
-    #banner {
+    /* #banner {
         margin-top: 150px;
         padding: 0 1rem;
         height: 80vh;
@@ -604,16 +611,16 @@ fieldset div {
 
     #banner div {
         padding-right: 0;
-    }
+    } */
 
     /* Description Section */
-    #description {
+    /* #description {
         padding: 0 1rem;
-    }
+    } */
     /* End of Description Section */
 
     /* Services Card Section */
-    #services-card {
+    /* #services-card {
         padding: 0 1rem;
     }
 
@@ -645,11 +652,11 @@ fieldset div {
 
     .cards div:nth-child(2) a {
         margin: 0.2rem;
-    }
+    } */
     /* End of Services Card Section */
 
     /* Services Section */
-    #services {
+    /* #services {
         padding: 0 1rem;
         margin-top: 10rem;
     }
@@ -672,19 +679,19 @@ fieldset div {
 
     .serv-desc:nth-child(2) div:nth-child(2) {
         left: 0rem;
-    }
+    } */
     /* End of Services Section */
 
     /* Client Review Section */
-    #client-review {
+    /* #client-review {
         padding: 0 1rem;
         margin: 10rem 0;
 
-    }
+    } */
     /* End of Client Review Section */
 
     /* Offering Section */
-    #offering {
+    /* #offering {
         padding: 0 1rem;
         margin: 0;
     }
@@ -699,12 +706,12 @@ fieldset div {
 
     #offering div div:nth-child(2) {
         width: 100%;
-    }
+    } */
     /* End of Offering Section */
 
     /* Footer Section */
-    #footer > div {
+    /* #footer > div {
         flex-direction: column;
         gap: 2rem;
     }
-}
+} */
