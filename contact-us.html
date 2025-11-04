@@ -5,15 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Jaeger Premium Care - Maintenance Services of Jaegers">
     <link rel="icon" type="image/x-icon" href="assets/jaeger-logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Geo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/output.css">
     <title>Jaeger Premium Care</title>
 </head>
 <body>
 
-    <header>
+    <header
+        class="font-orbitron sticky top-0 z-100 bg-white"
+    >
+        <div
+            class="flex flex-row flex-1 items-center justify-between px-4 md:px-10 lg:px-20 shadow-md"
+        >
+
+            <!-- image -->
+            <a
+                href="index.html"
+                class="w-[75px] aspect-square"
+            >
+                <img 
+                    src="/assets/jaeger-logo.png" 
+                    alt="jaeger-premium-care-logo"
+                    class="w-full h-full"
+                >
+            </a>
+
+            <!-- navlinks -->
+            <div
+                class="md:flex grow items-center justify-end hidden"
+            >
+                <ul
+                    class="flex flex-row text-md gap-20"
+                >
+                    <li class="hover:underline hover:bold transition-all"><a href="/index.html">Home</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="#service-section">Service</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="#feature-section">Feature</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="#review-section">Review</a></li>
+                    <li class="hover:underline hover:bold transition-all"><a href="/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        
         <!-- navigation section -->
-        <nav class="nav-bar">
+        <!-- <nav class="nav-bar">
             <div>
                 <a href="">
                     <img src="assets/jaeger-logo.png" alt="logo" width="100px">
@@ -24,12 +61,145 @@
                 <li><a href="">services</a></li>
                 <li><a href="">contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <!-- end of navigation section -->
     </header>
 
+    <!-- form section -->
+    <div class="flex flex-col items-center justify-center p-8">
+
+        <form action="#" class="flex flex-col items-center rounded-md outline-2 outline-gray-200 justify-center p-8">
+
+            <Legend class="text-4xl font-orbitron font-bold mb-8">Contact Us</Legend>
+            
+            <fieldset
+                class="flex flex-col gap-3 font-geo"
+            >
+                
+                <!-- username -->
+                <div class="flex flex-row items-center gap-5">
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="first-name">First Name</label>
+                        <span class="">:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="text" name="first-name">
+                    </div>
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="last-name">Last Name</label>
+                        <span>:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md">
+                    </div>
+                </div>
+
+                <!-- email and phone -->
+                <div class="flex flex-row items-center gap-5">
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="user-email">Email Address</label>
+                        <span class="">:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="text" name="first-name" type="email" name="user-email">
+                    </div>
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="phone-number">Phone Number</label>
+                        <span>:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="text" name="first-name" type="number" name="phone-number">
+                    </div>
+                </div>
+                
+                <!-- age and dob -->
+                <div class="flex flex-row items-center gap-5">
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="pilot-age">Age</label>
+                        <span>:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="number" name="pilot-age">
+                    </div>
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="date-of-birth">Date of Birth</label>
+                        <span>:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="date" name="date-of-birth">
+                    </div>
+                </div>
+
+                <!-- district and jaeger type -->                
+                <div class="flex flex-row items-center gap-5">
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="district">District</label>
+                        <span>:</span>
+                        <input class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="number" name="district">
+                    </div>
+                    <div class="flex flex-row w-1/2 items-center gap-1">
+                        <label class="w-2/5" for="jaeger-type">Jaeger Type</label>
+                        <span>:</span>
+                        <select name="kaiju-type" id="" class="w-2/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md">
+                            <option value="" disabled selected>--Select Jaeger Type--</option>
+                            <option value="">Gipsy Danger</option>
+                            <option value="">Striker Eureka</option>
+                            <option value="">Chemo Alpha</option>
+                            <option value="">Coyote Tango</option>
+                            <option value="">Brawler Yukon</option>
+                            <option value="">Crimson Typhoon</option>
+                            <option value="">Gypsi Avenger</option>
+                            <option value="">Others</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- type of services and type of kaiju defeated -->
+                <div class="flex flex-row items-cstart justify-start gap-5 h-full">
+                    <div class="h-full flex flex-col w-1/2 items-start justify-start gap-1">
+                        <label for="service-type">What Kind of Service do You Want?</label>
+                        <div class="flex flex-col text-wrap">
+                            <input type="radio" name="service-type">Basic Maintenance
+                            <input type="radio" name="service-type">Armor Upgrade
+                            <input type="radio" name="service-type">Full Maintenance and Upgrade
+                            <input type="radio" name="service-type">Booster Upgrade
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-1/2 items-start justify-start gap-1">
+                        <label for="type-of-kaiju-defetead">Type of Kaiju Defeated</label>
+                        <div class="flex flex-row w-full">
+                            <div class="flex flex-col w-1/2 items-start justify-start">
+                                <input type="checkbox" name="kaiju" id="">Godzilla</input>
+                                <input type="checkbox" name="kaiju" id="">Veran</input>
+                                <input type="checkbox" name="kaiju" id="">Space Godzilla</input>
+                                <input type="checkbox" name="kaiju" id="">Supergiant-class Kaiju</input>
+                            </div>
+                            <div class="flex flex-col w-1/2 items-start justify-start">
+                                <input type="checkbox" name="kaiju" id="">Giant-class Kaiju</input>
+                                <input type="checkbox" name="kaiju" id="">Midsize Kaiju</input>
+                                <input type="checkbox" name="kaiju" id="">Miniature Kaiju</input>
+                                <input type="checkbox" name="kaiju" id="">Others</input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- number of kaiju defetead -->
+                <div class="flex flex-row w-full gap-1">
+                    <label class="w-1/5" for="kaiju-defeated">Kaiju Defeated</label>
+                    <span>:</span>
+                    <input class="w-3/5 flex grow px-1 py-0.5 outline outline-gray-200 rounded-md" type="number" name="kaiju-defeated" placeholder="How Many Kaiju has Been Defeated?">
+                </div>
+                
+                <!-- pick up date -->
+                <div>
+                    <label for="pickup-date">When Did You Expect To Take The Jaeger That Has Been Maintained</label>
+                    <div class="flex flex-row gap-2">
+                        <input class="px-1 py-0.5 outline outline-gray-200 rounded-md w-1/2" type="date" name="pickup-date" id="">
+                        <input class="px-1 py-0.5 outline outline-gray-200 rounded-md w-1/2" type="time" name="pickup-date" id="">
+                    </div>
+                </div>
+
+                <!-- submit button -->
+                <div class="flex items-center justify-center w-full mt-8">
+                    <input class="flex px-6 py-4 rounded-md text-white font-orbitron bg-blue-600 hover:bg-blue-400" type="submit" value="MAINTENANCE MY JAEGER">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+
     <!-- Form Section -->
-    <section id="contact-us-form">
+    <!-- <section id="contact-us-form">
         <div>
             <form action="">
                 <legend class="heading-2">Contact Us</legend>
@@ -111,6 +281,6 @@
                     </fieldset>
             </form>
         </div>
-    </section>
+    </section> -->
 </body>
 </html>
